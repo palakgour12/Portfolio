@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset= "UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Portfolio Website - Palak</title>
+    <link rel="stylesheet", href="style.css"> <!--External CSS added-->
+    <script src="https://kit.fontawesome.com/3b27de5947.js" crossorigin="anonymous"></script> <!--Font awesome script added-->
+</head>
+<body>
+    <!----------------------------------------------Home----------------------------------------------------------------------------------------------->
+    <div id="header">
+        <div class="container">
+            <nav>   
+                <img src="images/logo.png", class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <div class="head-text">
+                <p>Software Developer  <i class="fa-solid fa-laptop"></i></p>
+                <h1>Hello ,I'm <span>Palak Gour</span><br> from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------------About-------------------------------------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me  <i class="fa-regular fa-address-card"></i></h1>
+                    <!-- <style>p{color: brown;}</style>  inline css -->
+                    <p>Hello, I'm Palak Gour from India, with 1+ years of experience specializing in Ruby on Rails development for both frontend and backend. I have a passion for embracing new technologies and tackling diverse tasks.
+                        My expertise encompasses the entire software engineering lifecycle, from requirements analysis to application design, architecture, development, and testing within the Ruby on Rails environment. I thrive in Agile/Scrum methodologies, contributing effectively to team collaboration and project success.
+                        Proficient in a wide array of technologies, including Ruby, Rails, Git, React, Angular, JavaScript (including ES6), jQuery, HTML, and CSS. Additionally, I have experience working with various cloud platforms such as Heroku, AWS, and DigitalOcean.
+                        In terms of web and middleware services, I'm well-versed in Apache, Nginx, Unicorn, Passenger, and Mongrel. My database proficiency extends to MongoDB, MySQL, PostgreSQL, SQLite, and Redis. Moreover, I have integrated numerous web APIs, including those of LinkedIn, Instagram, YouTube, Amazon, eBay, Facebook, Twitter, and PayPal.
+                        Over the course of my career, I've contributed to a number of projects across diverse domains. Currently, I'm actively involved in a recent project where my role involves {brief description of your role}.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Ruby on Rails</span><br>Web Applications Development</li>
+                            <li><span>HTML CSS</span><br>Web Applications Development</li>
+                            <li><span>Python</span><br>Web Applications Development</li>
+                            <li><span>DBMS</span><br>Database Management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-2024</span><br>RoR Developer at Shriffle Technologies</li>
+                            <li><span>2021-2023</span><br>Full Stack Developer at Something tech.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016-2018</span><br>Schooling at PPS</li>
+                            <li><span>2019-2021</span><br>Bachelor of Computer Applications at New Science Institude.</li>
+                            <li><span>2021-2023</span><br>Master of Computer Applications at IPS Academy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------Services---------------------------------------------------------------------------->
+    
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services  <i class="fa-brands fa-servicestack"></i></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i> <!--From fontawesme.com-->
+                    <h2>Web App development</h2>
+                    <p>We are a web development company that purely focuses on building fully functional.. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Website development</h2>
+                    <p>Web development encompasses a wide range of services, which include delivering .</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Mobile App development</h2>
+                    <p>Hyperlink InfoSystem was born out of a vision to develop tech-based solutions .</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------------Portfolio-------------------------------------------------------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work  <i class="fa-solid fa-person-digging"></i></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Alislinkedin App</h3>
+                        <p>This app connects all job seekers and job providers.
+                            Download it from playstore.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Carbyneinv App</h3>
+                        <p>This app help all loan provider to make the process simple.
+                            Download it from playstore.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Notary App</h3>
+                        <p>This app make the notarization 
+                            process all automated.
+                            Download it from playstore.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------------------------------------------------------Contact----------------------------------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me  <i class="fa-solid fa-address-book"></i></h1>
+                    <p><i class="fa-solid fa-envelope"></i> palak@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 7999982773</p>
+                    <div class="social-icons">
+                        <a  href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a  href="https://x.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                        <a  href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a  href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Palak. Made with <i class="fa-solid fa-heart"></i>  by Palak's Portfolio.</p>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxwNZoUJdwVtjySqWicxEsoC8ViYej8Ih2yt5ruqtiGa4XOPpZlMzeXnDOTLV3Lfysq/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Info sent Successfully."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>
